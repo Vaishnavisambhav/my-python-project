@@ -1,3 +1,26 @@
+#List can have multiple Data types
+my_list =["vaishnavi", 24, 5.6, True]
+
+print(" , ".join(str(item) for item in my_list))
+
+
+name = "Vaishnavi Kaple"
+age = 24
+height = 5.6
+student = False
+data_types_list =[name, age, height, student]
+
+#One way to print the items of the list in one line with comma separator
+print(" , ".join(str(item) for item in data_types_list))  
+
+#another method to print the items of the list in one line with comma separator
+for i in range(len(data_types_list)):
+    if i != len(data_types_list)-1:
+        print(data_types_list[i], end = ", ")
+    else:
+        print(data_types_list[i])
+
+
 #list of fruits
 fruits = ["Apple", "Banana", "Mango", "Orange"]
 
