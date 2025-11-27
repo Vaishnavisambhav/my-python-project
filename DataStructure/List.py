@@ -36,6 +36,10 @@ insert_item = fruits.insert(2, "Strawberry")
 #removing item from the list
 remove_item = fruits.remove("Banana")
 
+#sorting items of the list
+fruits.sort()
+print(f"the sorted list is : {fruits}")
+
 #popping item from the list
 popped_item = fruits.pop()      #removes last item
 
