@@ -1,0 +1,40 @@
+# from math import pi,sqrt
+
+# def calculate_square_root(number):
+#     return sqrt(number)
+
+# def area_of_circle(radius):
+#     return pi*radius*radius
+
+
+# # number = int(input("Enter the number : "))
+# # result = calculate_square_root(number)
+# # print(result)
+
+# radius=int(input("Enter the radius of the circle : "))
+# area = area_of_circle(radius)
+# print(area)
+
+
+import random
+
+def random_number(first_num,last_num):
+    number=random.randint(first_num,last_num)
+    return number
+
+num1 = int(input("Enter the first number : "))
+num2 = int(input("Enter the second number: "))
+rand_num=random_number(num1,num2)
+print(f"The random number between {num1} and {num2} is {rand_num}")
+
+
+def random_choice(items=None):
+     if items is None:
+         items=[]
+     return random.choice(items)
+
+
+item = ["Mango", "Banana", "Orange","Grapes","Pinapple"]
+result = random_choice(item)
+print(result)
+
